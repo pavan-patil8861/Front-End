@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*
+            selector{
+                property: value;
+            }        
+        */
+
+        /*1.Simple Selector Start Here */
+        
+        /* 1.1 Tag Name Selector */
+        h1 {
+            color: red;
+        }
+
+        /* 1.2 Class Name Selector */
+        .firstRow {
+            color: green;
+        }
+
+        /* 1.3 Id Name Selector */
+        #user2 {
+            color: violet;
+        }
+        
+
+        /* 1.4 Universal */
+        * {
+            /* border: 2px solid red; */
+        }
+
+
+        /* 1. Simple Selector End Here */
+
+
+        /* 2. Attribute Selector Start Here */
+
+        [title="Hii im Facebook Btn 🙋‍♀️"] {
+            color: red;
+            font-size: 2rem;
+            font-style: italic;
+        }
+
+
+        /*2.Attribute Selector End Here */
+
+        /* 4. Pseudo-element Selector Start Here */
+
+        p::first-letter{
+            content: "Hii I'm first-letter";
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!--
+        Types of Selectors
+        1. Simple
+        2. Attribute
+        3. Combinator
+        4. Pseudo-element
+        5. Pseudo-class
+    -->
+
+
+    <i>Hii im Italic</i>
+    <b>Hii im bold</b>
+
+
+    <a href="" title="Hii im Facebook Btn 🙋‍♀️">Hii im Anchor</a>
+
+
+
+
+    <div class="box">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, pariatur ducimus. Similique, voluptatibus
+            dolorum labore iure rem possimus soluta nam ipsum nemo aliquam culpa aperiam iusto libero, sunt, porro
+            autem?
+            message
+        </p>
+       
+        <h1 class="firstRow">Heading 1 ✅✅</h1>
+        <h1 class="firstRow">Heading 1</h1>
+        <h1 class="firstRow">Heading 1</h1>
+        <h1>Heading 1</h1>
+
+
+        <h1 id="user1">Heading 1</h1>
+        <h1 id="user2">Heading 1</h1>
+        <h1 id="user3">Heading 1</h1>
+        <h1 id="user4">Heading 1</h1>
+    </div>
+
+</body>
+
+</html>
+
+
