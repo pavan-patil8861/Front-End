@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>,
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01ClassTask1</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: math;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            /* background-color: aqua; */
+            align-items: center;
+            height: 100vh;
+            background-image: linear-gradient(to bottom right, navy, pink, violet);
+        }
+
+        .skyBlueBox {
+            background-color: skyblue;
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            padding: 100px 0px;
+        }
+
+        .whiteBox {
+            background-color: white;
+            padding: 30px;
+        }
+
+        input, 
+        button {
+            background: none;
+            border: none;
+            outline: none;
+            width: 100%;
+            font-size: 1.1rem;
+        }
+
+        .inputBox {
+            border: 1px solid gray;
+            padding: 10px;
+            width: 300px;
+            margin: 10px 0px;
+        }
+
+        .submitBox {
+            width: 300px;
+            /* border: 1px solid gray; */
+            padding: 10px;
+            background-color: skyblue;
+        }
+
+        button{
+            color:white;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="skyBlueBox">
+        <div class="whiteBox">
+            <form>
+                <div class="inputBox">
+                    <input type="text" placeholder="Enter Username">
+                </div>
+                <div class="inputBox">
+                    <input type="text" placeholder="Enter Password">
+                </div>
+                <div class="submitBox">
+                    <button>Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

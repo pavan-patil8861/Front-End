@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getSet</title>
+    <style>
+        section {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            padding: 20px;
+            /* flex-wrap: wrap; */
+        }
+
+        .box {
+            width: 50%;
+        }
+        img{
+            height:200px;
+            width:200px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="box">
+            <div class="formbox">
+                <div class="inputBox">
+                    <input type="text" placeholder="Name" id="name">
+                </div>
+                <div class="inputBox">
+                    <input type="text" placeholder="Age" id="age">
+                </div>
+                <div class="inputBox">
+                    <input type="text" placeholder="Email" id="email">
+                </div>
+                <div class="inputBox">
+                    <input type="text" placeholder="Password" id="pswd">
+                </div>
+                <div class="inputBox">
+                    <input type="text" placeholder="City" id="city">
+                </div>
+                <div class="inputBox">
+                    <input type="text" placeholder="Image URL" id="imgUrl">
+                </div>
+                <div class="inputBox">
+                    <button onclick="submitData()">Submit</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="resultBox">
+                <h3 id="resultName">User Name</h3>
+                <p id="resultAge">Age</p>
+                <h4 id="resultEmail">email</h4>
+                <p id="resultPswd">Password</p>
+                <p id="resultCity">City</p>
+                <img id="resultImage" alt="image">
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        function submitData() {
+            let name = document.getElementById('name').value
+            let age = document.getElementById('age').value
+            let email = document.getElementById('email').value
+            let pswd = document.getElementById('pswd').value
+            let city = document.getElementById('city').value
+            let imageUrl = document.getElementById('imgUrl').value
+
+            let resultName = document.getElementById('resultName')
+            let resultAge = document.getElementById('resultAge')
+            let resultEmail = document.getElementById('resultEmail')
+            let resultPswd = document.getElementById('resultPswd')
+            let resultCity = document.getElementById('resultCity')
+            let resultImage = document.getElementById('resultImage')
+
+            resultName.innerText = name
+            resultAge.innerText = age
+            resultEmail.innerText = email
+            resultPswd.innerText = pswd
+            resultCity.innerText = city
+            resultImage.src = imageUrl
+        }
+    </script>
+
+</body>
+
+</html>

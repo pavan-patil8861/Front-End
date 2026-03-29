@@ -1,0 +1,57 @@
+/* 
+
+p{
+    color:  RED;
+}
+
+button{
+    color: brown;
+    background-color: white;
+}
+
+body{
+    /* background-color: yellow; */
+/* background-color: rgb(187, 0, 255); */
+/* background-color: #01c1f1;
+    background-color: #0ca68c;   */
+/* background-color: #585759; */
+
+/* } */
+
+
+
+/* Universal selector */
+/* * {
+    color: navy;
+} */
+
+/* element selector */
+/* h1 {
+    color: green;
+}
+
+button{
+    color: brown;
+}
+
+#One{
+    color: aqua;
+    background-color: rgb(205, 204, 204);
+}
+
+#Two{
+    color: magenta;
+}
+#Three{
+    color: brown;
+}
+
+.test{
+    color: red;
+} */
+
+#box{
+    background-color: skyblue;
+}
+
+

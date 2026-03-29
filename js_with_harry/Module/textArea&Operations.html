@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: math;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        textarea {
+            width: 400px;
+            height: 150px;
+            padding: 10px;
+            border-radius: 7px;
+            resize: none;
+        }
+
+        #btnColor {
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+
+        .btnBox button {
+            padding: 5px;
+        }
+
+        .text-formatBtn {
+            margin-top: 5px;
+        }
+
+        .text-formatBtn button {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="mainBox">
+            <div class="text">
+                <textarea placeholder="Give me some text..." id="text"></textarea>
+            </div>
+            <div class="btnBox" id="btnBox">
+                <input type="text" placeholder="Color name" id="btnColor">
+                <button onclick="createBtn()">Create Button</button><br>
+                <button onclick="setColorOntext(innerText)">Red</button>
+                <button onclick="setColorOntext(innerText)">Green</button>
+                <button onclick="setColorOntext('Yellow')">Yellow</button>
+            </div>
+            <div class="text-formatBtn">
+                <button onclick="transformText(innerText)">Uppercase</button>
+                <button onclick="transformText(innerText)">Lowercase</button>
+                <button onclick="transformText(innerText)">Capitalize</button>
+            </div>
+            <div class="size">
+                <label for="font-size">Font size : </label>
+                <input oninput="changeFontSize(value)" type="range" id="font-size" value="0" max="100">
+            </div>
+            <div id="box"></div>
+            <button onclick="createTag()">Create Tags</button>
+        </div>
+    </section>
+
+
+    <script>
+
+        let text = document.getElementById('text')
+
+        let num = 1
+
+        function createTag() {
+            let box = document.getElementById('box')
+            box.innerHTML += '<h1> Hii im Heading' + (num++) + '</h1>'
+        }
+
+        function setColorOntext(clrName) {
+            text.style.color = clrName
+        }
+
+        function createBtn() {
+            let btnColor = document.getElementById('btnColor').value
+            let btnBox = document.getElementById('btnBox')
+            btnBox.innerHTML += '<button onclick="setColorOntext(innerText)">' + btnColor + '</button>'
+        }
+
+        function transformText(transform) {
+            text.style.textTransform = transform
+        }
+
+        function changeFontSize(txtSize) {
+            text.style.fontSize = txtSize + 'px'
+        }
+
+
+
+    </script>
+</body>
+
+</html>

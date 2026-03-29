@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<select name="Select Choice" id="">
+    <option value="" selected disabled hidden>Select Category</option>
+    <option value="">Men's Cloth</option>
+    <option value="">Women's Cloth</option>
+    <option value="">Jewellery</option>
+    <option value="">Electronics</option>
+
+</select>
+<button onclick="getProducts()">Show Products </button>
+
+<body>
+    <script>
+        function getProducts() {
+            fetch("https://fakestoreapi.com/products")
+                .then(response => response.json())
+                .then(data => {
+                    console.log("Products:", data);
+                })
+                .catch(error => {
+                    console.log("Error:", error);
+                });
+        }
+    </script>
+</body>
+
+</html>

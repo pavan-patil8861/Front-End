@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Color Changer</title>
+
+    <style>
+        * {
+            margin: 5px;
+            padding: 5px;
+        }
+
+        #textarea {
+            height: 200px;
+            width: 400px;
+        }
+
+        button {
+            background-color: rgb(206, 241, 255);
+            border: 1px solid #999;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <textarea id="textarea" placeholder="Give me text...!"></textarea>
+    <br>
+
+    <input type="text" placeholder="Color Name" id="inputtext">
+    <button onclick="createbuttoncolor()">Create Button</button>
+    <br><br>
+
+    <div id="btn">
+        <button onclick="changecolor('red')">Red</button>
+        <button onclick="changecolor('green')">Green</button>
+    </div>
+
+    <script>
+        function createbuttoncolor(){
+            let colourname = document.getElementById("inputtext").value;
+            let btn = document.getElementById("btn");
+
+            if(colourname === "") return;   // prevent empty buttons
+
+            btn.innerHTML += 
+            '<button onclick="changecolor(\'' + colourname + '\')">' + colourname + '</button>';
+
+            document.getElementById("inputtext").value = ""; // clear input
+        }
+
+        function changecolor(colourname){
+            let text = document.getElementById("textarea");
+            text.style.color = colourname;
+        }
+    </script>
+
+</body>
+</html>

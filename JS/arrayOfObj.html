@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+
+
+    <input type="text" placeholder="Url" id="url"><br>
+    <input type="text" placeholder="Option name" id="name"><br>
+    <button onclick="addOption()">Create Option</button>
+
+
+    <select id="select">
+
+
+    </select>
+
+
+    <script>
+        let imges = []
+
+
+        function addOption() {
+            let urlData = document.getElementById('url').value
+            let nameData = document.getElementById('name').value
+
+
+            let obj = {
+                url: urlData,
+                name: nameData
+            }
+
+
+            imges.push(obj)
+
+
+            let select = document.getElementById('select')
+            select.innerHTML = ""
+            for (let i = 0; i < imges.length; i++) {
+                select.innerHTML += `
+                <option value="${imges[i].url}">${imges[i].name}</option>
+                `
+            }
+        }
+    </script>
+</body>
+
+
+</html>

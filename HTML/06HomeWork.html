@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Footer Sample</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style> 
+   body {
+    background: #dbe4ef;
+    font-family: Arial;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* Footer box */
+.footer {
+    background: #0a0f1d;
+    color: white;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 5px;
+}
+
+/* columns */
+.col {
+    width: 200px;   /* kind of fixed width */
+    margin-bottom: 20px;
+}
+
+.col h3 {
+    margin-bottom: 10px;
+}
+
+/* links */
+.col a {
+    color: #cccccc;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.col a:hover {
+    color: white;
+}
+
+/* email input */
+.email {
+    margin-top: 10px;
+    padding: 6px;
+    width: 130px;   /* not fully responsive (a bit of a flaw) */
+    border: 1px solid #333;
+}
+
+/* icons (basic circles) */
+.icons span {
+    background: #1e2533;
+    padding: 6px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 5px;
+    font-size: 12px;
+}
+ 
+</style>
+<body>
+
+<h1>Responsive Footer Design</h1>
+<p style="text-align:center; color:blue;">Using HTML & CSS Only</p>
+
+<div class="footer">
+
+    <div class="col">
+        <h3>Info</h3>
+        <a href="#">Formats</a><br>
+        <a href="#">Compression</a><br>
+        <a href="#">Pricing</a><br>
+        <a href="#">FAQ</a><br>
+        <a href="#">Status</a><br>
+        <a href="#">Policy</a><br>
+    </div>
+
+    <div class="col">
+        <h3>Getting Started</h3>
+        <a href="#">Introduction</a><br>
+        <a href="#">Themes</a><br>
+        <a href="#">Documentation</a><br>
+        <a href="#">Usages</a><br>
+        <a href="#">Elements</a><br>
+        <a href="#">Global</a><br>
+    </div>
+
+    <div class="col">
+        <h3>Resources</h3>
+        <a href="#">API</a><br>
+        <a href="#">Form Validation</a><br>
+        <a href="#">Accessibility</a><br>
+        <a href="#">Marketplace</a><br>
+        <a href="#">Visibility</a><br>
+        <a href="#">Community</a><br>
+    </div>
+
+    <div class="col">
+        <h3>Newsletter</h3>
+        <p>Subscribe for updates and news.</p>
+        <input type="email" placeholder="Email" class="email">
+        <button>Subscribe</button>
+
+        <div class="icons">
+            <span>f</span>
+            <span>gh</span>
+            <span>in</span>
+            <span>t</span>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

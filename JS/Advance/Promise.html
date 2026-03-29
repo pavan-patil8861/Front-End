@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <!--
+        Promise
+
+
+        Types of states
+        1. Fullfilled
+        2. Pending
+        3. Reject
+    -->
+
+
+    <script>
+
+
+        // let userAge = JSON.parse(prompt('Enter age...'))
+
+
+        // if (userAge) {
+        //     checkPromise()
+        // }
+
+
+        function checkPromise() {
+            let prom = new Promise((complete, reject) => {
+                setTimeout(() => {
+                    if (userAge > 30) {
+                        complete('✅')
+                    } else {
+                        reject('❌')
+                    }
+                }, 5000)
+            }).then((res) => {
+                alert('User age is Greater than 30 ' + res)
+            }).catch((err) => {
+                alert('User age is Less than 30 ' + err)
+            })
+        }
+
+
+        let api1 = "https://jsonplaceholder.typicode.com/users"
+        let api2 = "https://jsonplaceholder.typicode.com/todos"
+        let api3 = "https://jsonplaceholder.typicode.com/photos"
+
+
+        // let allPromise = Promise.any([api2, api1, api3])
+        // let allPromise = Promise.all([fetch(api2), fetch(api1), fetch(api3)])
+        // console.log(allPromise)
+        // allPromise.then(res => {
+        //     console.log(res[1].json())
+        // res.length
+        // })
+
+
+
+
+        let promise1 = Promise
+        // promise1.resolve('✅')
+        // promise1.reject('❌')
+        // console.log(promise1)
+
+
+        let fruit1 = Promise.resolve('🍇')
+        let fruit2 = Promise.resolve('🍎')
+        let fruit3 = Promise.reject('🥝')
+
+
+        let allSet = Promise.allSettled([fruit1, fruit2, fruit3])
+        // console.log(allSet)
+
+
+        // allSet.then(res => {
+        //     console.log(res)
+        // }).catch(err => {
+        //     console.log(err)
+        // }).finally(() => {
+        //     console.log('complet...')
+        // })
+
+
+        // ------------ Async Await ---------------
+
+
+        // console.log(1)
+        // console.log(2)
+        // console.log(3)
+        // async function printData(){
+        //     console.log(4)
+        //     console.log(5)
+        //     await console.log(6)
+        //     console.log(7)
+        // }
+        // console.log(8)
+        // printData()
+        // console.log(9)
+        // console.log(10)
+
+
+        async function getData() {
+            // console.log('call')
+            let fetchApi = await fetch('https://jsonplaceholder.typicode.com/users')
+            console.log(await fetchApi.json())
+        }
+        getData()
+
+
+        fetch('https://jsonplaceholder.typicode.com/users')
+            .then(res => res.json())
+            .then(res => console.log(res))
+    </script>
+</body>
+
+</html>

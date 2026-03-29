@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: math;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            padding: 0px 30px;
+
+        }
+
+        .mainBox {
+            width: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input,
+        button {
+            padding: 5px;
+            border-radius: 7px;
+        }
+
+        .inputBox {
+            width: 100%;
+        }
+
+        input {
+            width: 70%;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        img {
+            width: 500px
+        }
+
+        .resultBox {
+            display: flex;
+
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="mainBox">
+            <div class="box">
+                <select id="" onchange="showImage(value)">
+                    <option selected disabled>-- Select Image --</option>
+                    <option
+                        value="https://static.independent.co.uk/s3fs-public/thumbnails/image/2012/04/26/18/Untitled-5.jpg?width=1200">
+                        Hulk</option>
+                    <option value="https://cdn.marvel.com/content/2x/002irm_ons_cut_mob_01_1.jpg">Iron Man</option>
+                    <option value="https://cdn.marvel.com/content/2x/004tho_ons_cut_mob_01_3.jpg">Thor</option>
+                    <option
+                        value="https://i0.wp.com/www.thewrap.com/wp-content/uploads/2016/11/Chris-Evans-Captain-America-Trilogy.jpg?fit=618%2C412&quality=89&ssl=1">
+                        Captain America</option>
+
+                </select>
+            </div>
+            <div class="box" id="box">
+                <!-- <img src="" alt=""> -->
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function showImage(url) {
+            console.log(url)
+            let box = document.getElementById('box')
+            box.innerHTML = '<img src="' + url + '" alt="">'
+        }
+    </script>
+</body>
+
+</html>

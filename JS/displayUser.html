@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <input type="text" placeholder="Enter user name" id="name">
+        <button onclick="addUsers()">Add user</button>
+        <ol id="result"></ol>
+        <!-- <li>Name: Pavan</li> -->
+    </div>
+
+    <script>
+        let users = [
+            {
+                name: "Pavan"
+            },
+            {
+                name: "Pavan"
+            },
+            {
+                name: "Pavan"
+            },
+            {
+                name: "Pavan"
+            },
+            {
+                name: "Pavan"
+            },
+        ]
+
+        function addUsers() {
+
+            let name = document.getElementById('name').value
+            users.push({ name: name })
+
+            let result = document.getElementById('result')
+            result.innerHTML = ''
+
+            for (let i = 0; i < users.length; i++) {
+                result.innerHTML += `
+            <li>Name: ${users[i].name}</li>
+            `
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body id="body">
+    <h3>Choose your fav Background Color: </h3>
+    <button onclick="setBgColor('red')">Red</button>
+    <button onclick="setBgColor('green')">Green</button>
+    <button onclick="setBgColor('yellow')">Yellow</button>
+    <button onclick="setBgColor('gray')">Gray</button>
+    <button onclick="setBgColor('violet')">Violet</button>
+
+    <br><br>
+    <img id="myImg" src="" style="height:200px; width:200px;">
+
+    <h3>Enter height for a image: </h3>
+    <input id="imgHeight" type="number" placeholder="Enter height e.g: 100">
+
+    <h3>Enter width for a image: </h3>
+    <input id="imgWidth" type="number" placeholder="Enter Width e.g: 100">
+
+    <br><br>
+    <button onclick="setImageSize()">Set Image Size</button>
+
+    <h3>Choose Your Favorite Animal: </h3>
+    <button onclick="setImage('dog')">Dogesh bhai</button>
+    <button onclick="setImage('cat')">Bagad Billa </button>
+    <button onclick="setImage('monkey')">Monkesh Bhai</button>
+    <button onclick="setImage('lion')">Shareee 👍</button>
+    <button onclick="setImage('aditya')">Aditya </button>
+
+    <script>
+        function setBgColor(colorName) {
+            document.getElementById('body').style.backgroundColor = colorName;
+        }
+
+        function setImage(animal) {
+            let img = document.getElementById('myImg');l̥l̥l̥
+            if (animal == 'dog') {
+                img.src = "https://media.licdn.com/dms/image/v2/D5603AQG6WklPDB4kkA/profile-displayphoto-scale_200_200/B56ZeeuEEHG0AY-/0/1750714566769?e=2147483647&v=beta&t=4-nn7WvCkm3KQGN9Hwz0sjyxBXLiXCzH77LDTx72FxQ";
+            } else if (animal == 'cat') {
+                img.src = "https://yt3.googleusercontent.com/1e_vXSz0vzMh1lQ9ssrIGm3QJpBxU6qw1mslZF6qodAE0ETK67NGjBzlSCrK0ND1Q1kUJP4f=s900-c-k-c0x00ffffff-no-rj";
+            } else if (animal == 'monkey') {
+                img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnXCbCpCaSe4zjEou5I_lEwds35Dat4DXZDA&s";
+            } else if (animal == 'lion') {
+                img.src = "https://static.vecteezy.com/system/resources/thumbnails/056/697/808/small/funny-lion-wearing-sunglasses-in-a-bright-setting-for-creative-projects-photo.jpeg";
+            } else if (animal == 'aditya') {
+                img.src = "https://t3.ftcdn.net/jpg/11/31/69/84/240_F_1131698402_h4nvoX7H5k2SpvLL8uRUHwrbFMjSTskG.jpg";
+            }
+        }
+
+        function setImageSize() {
+            let img = document.getElementById('myImg');
+            let h = document.getElementById('imgHeight').value;
+            let w = document.getElementById('imgWidth').value;
+
+            if (h) img.style.height = h + "px";
+            if (w) img.style.width = w + "px";
+        }
+        
+    </script>
+</body>
+
+</html>

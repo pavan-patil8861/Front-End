@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Boxes Layout</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .box{
+            height: 200px;
+            width: 200px;
+            background: gray;
+        }
+
+        .middle{
+            display: flex;
+            flex-direction: column;
+            gap: 20px
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+
+        <!-- Left box -->
+        <div class="box"></div>
+
+        <!-- Middle two boxes stacked vertical -->
+        <div class="middle">
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+
+        <!-- Right box -->
+        <div class="box"></div>
+
+    </section>
+
+</body>
+</html>

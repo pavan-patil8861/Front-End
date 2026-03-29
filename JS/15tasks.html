@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let students = ["Aditya", "Pavan", "Omkar", "Yogesh"]
+        console.log(students)
+        console.log(students.length)
+
+        students.push("Amaan")
+        students.unshift("Sohel")
+        console.log(students)
+
+        students.pop()
+        students.shift()
+        console.log(students)
+
+        console.log(students.includes("Ritesh"))
+
+        let city1 = ["Pune", "Mumbai"]
+        let city2 = ["Delhi", "Chennai"]
+        let allCities = city1.concat(city2)
+        console.log(allCities)
+
+        let colors = ["Red", "Green", "Blue"]
+        console.log(colors.join(","))
+
+        console.log(students.indexOf("Parvez"))
+
+        console.log(students.slice(0, 3))
+
+        console.log(students.sort())
+
+        let str1 = "JavaScript Learning"
+        console.log(str1.length)
+
+        let name = "Pavan"
+        console.log(name.toUpperCase())
+        console.log(name.toLowerCase())
+
+        console.log(name.charAt(0))
+        console.log(name.charAt(name.length - 1))
+
+        let sentence = "I am learning Angular framework"
+        console.log(sentence.includes("Angular"))
+
+        let lang = "Java"
+        console.log(lang.replace("Java", "JavaScript"))
+
+        let spaced = "   Hello World   "
+        console.log(spaced.trim())
+
+
+        
+    </script>
+</body>
+
+</html>

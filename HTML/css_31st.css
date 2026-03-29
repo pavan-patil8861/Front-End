@@ -1,0 +1,38 @@
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            /* background-color: rgb(247, 145, 145); */
+        }
+
+        .box {
+            height: 250px;
+            width: 400px;
+            text-align: center;
+        }
+
+        section {
+            display: flex;
+           flex-wrap: wrap; 
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            align-content: center;
+       
+        }
+        .h3{
+           margin: 5px   ;
+        }
+        .box1{
+            background-color: rgb(98, 196, 235);
+
+        }
+        .bi{
+
+            font-size: 2rem;
+            color: aqua;
+        }
+        
+
+
+

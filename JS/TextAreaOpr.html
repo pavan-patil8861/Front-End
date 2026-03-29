@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textarea</title>
+</head>
+
+<style>
+    * {
+        margin: 2px;
+        padding: 5px;
+        font-family: math;
+
+    }
+
+    #textarea {
+        height: 200px;
+        width: 400px;
+        border: 2px solid black;
+        
+    }
+    
+</style>
+
+<body>
+    <textarea name="area" id="textarea" placeholder="give me text"></textarea>
+    <br>
+
+    <input type="text" placeholder="color name" id="inputtext">
+    <button id="b" onclick="creatcolourbutton()">create button</button>
+    <br>
+
+    <div id="btn">
+        <button onclick="colorchange('red')">red</button>
+        <button onclick="colorchange('green')">green</button>
+    </div>
+
+    <div id="case">
+        <button onclick="toUpper()">Uppercase</button>
+        <button onclick="toLower()">Lowercase</button>
+        <button onclick="toCapitalize()">Capitalize</button>
+    </div>
+
+    <div id="font-family">
+        <h3>Select text-area font style</h3>
+        <button onclick="fontchange('Arial')">Arial</button>
+        <button onclick="fontchange('Times New Roman')">Times New Roman</button>
+        <button onclick="fontchange('Math')">Math</button>
+        <button onclick="fontchange('Calibri')">Calibri</button>
+        <button onclick="fontchange('Gill Sans')">Gill Sans</button>
+    </div>
+
+    <div id="font-family">
+        <select name="" id="font-family" >
+            <option value="" option selected disabled>---Select---</option>
+            <option value="" onclick="fontchange('Arial')">Arial</option>
+            <option value="" onclick="fontchange('Times New Roman')">Times New Roman</option>
+            <option value="" onclick="fontchange('Math')">Math</option>
+            <option value="" onclick="fontchange('Calibri')">Calibri</option>
+            <option value="" onclick="fontchange('Gill Sans')">Gill Sans</option>
+
+        </select>
+    </div>
+
+    <script>
+        function creatcolourbutton() {
+            let colourname = document.getElementById("inputtext").value;
+            let btn = document.getElementById("btn");
+
+            btn.innerHTML +=
+                '<button onclick="colorchange(\'' + colourname + '\')">' + colourname + '</button>';
+        }
+
+        function colorchange(colourname) {
+            let text = document.getElementById("textarea");
+            text.style.color = colourname;
+        }
+
+        function toUpper() {
+            let text = document.getElementById("textarea");
+            text.value = text.value.toUpperCase();
+        }
+        function toLower() {
+            let text = document.getElementById("textarea");
+            text.value = text.value.toLowerCase();
+        }
+        function toCapitalize() {
+            let text = document.getElementById("textarea");
+            text.value.toCapitalize();
+        }
+
+        function fontchange(fontfamily){
+            let text = document.getElementById("textarea");
+            text.style.fontFamily = fontfamily;
+        }
+
+
+
+    </script>
+</body>
+
+</html>

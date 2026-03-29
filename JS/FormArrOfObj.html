@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <section>
+        <label for="text">Name</label>
+        <div class="inputbox">
+            <input type="text">
+        </div>
+
+        <label for="text">Email</label>
+        <div class="inputbox">
+            <input type="text">
+        </div>
+
+        <label for="text">Age</label>
+        <div class="inputbox">
+            <input type="text">
+        </div>
+
+        <label for="text">City</label>
+        <div class="inputbox">
+            <input type="text">
+        </div>
+
+        <label for="text">Image</label>
+        <div class="inputbox">
+            <input type="file">
+        </div>
+
+        <br>
+        <div>
+            <input type="submit">
+        </div>
+
+    </section>
+
+    <script>
+        let userList={};
+        function submitdata() {
+
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let age = document.getElementById("age").value;
+            let city = document.getElementById("city").value;
+            let imag = document.getElementById("imag").value;
+
+            let resultname = document.getElementById("resultname");
+            let resultemail = document.getElementById("resultemail");
+            let resultage = document.getElementById("resultage");
+            let resultcity = document.getElementById("resultcity");
+            let resultimag = document.getElementById("resultimag");
+
+            let userlist = {
+                resultname: name,
+                resultemail: email,
+                resultage: age,
+                resultcity: city,
+                resultimag: imag
+            }
+
+            console.log(userList);
+            
+            resultname.innerText = userList.resultname;
+            
+        }
+    </script>
+</body>
+</html>

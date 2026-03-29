@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        section {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+
+        @media(max-width:700px) {
+            section {
+                justify-content: center;
+            } 
+
+
+        .box {
+            background-color: red;
+            border-radius: 7px;
+        }
+        }
+
+
+        @media(max-width:400px) {
+            .box {
+                flex-grow: 1;
+            }
+        }
+
+
+         @media(min-width:200px)and(max-width:400px) {
+            .box {
+                background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4sJIMt41B6mLlW3GKnR6FwCLfFpdnZSsr-w&s);
+                background-size: 100% 100%;
+            }
+        } 
+
+        
+    </style>
+
+<body>
+    <section>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </section>
+</body>
+
+</html>

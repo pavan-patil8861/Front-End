@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+</head>
+
+<body>
+    <script>
+        let library = [
+            {
+                member_details: {
+                    full_name: "",
+                    age: 0,
+                    member_id: 0,
+                    gender: ""
+
+                },
+                contact: {
+                    per: 0,
+                    alt: 0,
+                    email: ""
+                },
+                address: {
+                    per: {
+                        city: "",
+                        pin: 0,
+                        area: "",
+                    },
+                    alt: {
+                        city: "",
+                        pin: 0,
+                        area: "",
+                    }
+                },
+                borrow_history: [
+                    {
+                        book_id: 0,
+                        issue_date: "",
+                        return_date: ""
+                    }
+                ],
+                roles: "user",
+
+            }
+        ]
+
+        let book = [
+            {
+                book_details: {
+                    book_id: 0,
+                    title_name: "",
+                    author_name: ""
+                },
+                availability:
+                {
+                    total_copies: 0,
+                    available: 0,
+                    issued: 0
+                },
+
+                rating: 0
+            }
+        ]
+
+        console.log(library[0])
+
+    </script>
+</body>
+
+</html>

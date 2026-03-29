@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Demo</title>
+</head>
+<body>
+
+    <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aliquam laudantium quae, hic labore possimus fugiat pariatur asperiores doloribus aperiam dolore provident laborum odit eveniet rem non accusamus corrupti aspernatur.
+    </p>
+
+    <a id="myLink">Open Google</a>
+
+    <script>
+        let para = document.getElementById("para")
+
+        para.title = "This is a paragraph"
+        para.setAttribute("class", "para")
+        para.setAttribute("style", "color:blue; font-size:18px;")
+
+        let anchor = document.getElementById("myLink")
+
+        anchor.setAttribute("href", "https://google.com")
+        anchor.setAttribute("title", "Go to Google")
+        anchor.setAttribute("target", "_blank")
+
+        console.log(anchor.getAttribute("id"))
+        console.log(anchor.getAttribute("href"))
+        console.log(anchor.getAttribute("title"))
+        console.log(anchor.getAttribute("target"))
+
+        anchor.removeAttribute("target")
+        anchor.removeAttribute("title")
+
+        l
+    </script>
+
+</body>
+</html>

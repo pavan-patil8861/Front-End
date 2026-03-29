@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeTask#1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #e87fd8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .pinkBox {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-top: 40px;
+        }
+
+        .whiteBox {
+            background: #ffffff;
+            width: 70%;
+            padding: 25px;
+            border-radius: 6px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        form label {
+            font-weight: bold;
+            font-size: 14px;
+            display: block;
+            margin-top: 14px;
+        }
+
+        .inputBox {
+            margin-top: 6px;
+            margin-bottom: 10px;
+        }
+
+        .inputBox input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #bbb;
+            border-radius: 4px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 25px;
+            background: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<h1>Contact Us</h1>
+
+<body>
+    <div class="pinkBox">
+        <div class="whiteBox">
+            <form>
+                <label>YOUR NAME*</label>
+                <div class="inputBox">
+                    <input type="text" placeholder="First name">
+                    <input type="text" placeholder="Last name">
+                </div>
+                <label>EMAIL ADDRESS*</label>
+                <div class="inputBox">
+                    <input type="text" placeholder="Eg.example@email.com">
+                </div>
+                <label>PHONE NUMBER*</label>
+                <div class="inputBox">
+                    <input type="number" placeholder="Eg *1 800 000000">
+                </div>
+                <label>MESSAGE*</label>
+                <div class="inputBox">
+                    <textarea placeholder="Please enter your comments"> </textarea>
+                </div>
+                <div class="button"></div>
+                <button>Submit -></button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

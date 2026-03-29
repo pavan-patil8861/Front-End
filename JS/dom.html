@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<h1 id="head">Message</h1>
+<img id=img>
+<a href="" id="link"></a>
+<p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque velit nostrum aut veritatis officiis veniam
+    delectus iste? Iste in beatae molestias nemo doloremque quaerat similique, obcaecati sapiente mollitia, sunt
+    ducimus!</p>
+<div id="div"></div>
+<section id="section"></section>
+<i id="i"></i>
+<b id="b"></b>
+<input type="text" name="" id="inptTag" value="">
+
+
+<body>
+    <script>
+        let h1Tag = document.getElementById('head')
+        h1Tag.innerText = "Message Two"
+        h1Tag.title = "hii this is a Message"
+        console.log(h1Tag)
+
+        let imgTag = document.getElementById('img')
+        imgTag.src = "https://tse3.mm.bing.net/th/id/OIP.VQ3cHQmXkvNndPmuGT9ahwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+        imgTag.height = "200"
+        imgTag.width = "200"
+
+        console.log(imgTag);
+
+        let linkTag = document.getElementById("link")
+        linkTag.innerText = "Instagram Login"
+        linkTag.style.fontSize = "2rem"
+        LinkTag.href = "https://www.instagram.com/"
+        console.log(linkTag);
+
+        let paraTag = document.getElementById("para")
+        paraTag.innerText = "para";
+        console.log(p);
+
+        let divTag = document.getElementById("div")
+        divTag.innerText = "Lorem"
+        // divTag.width = "200"
+        // divTag.height = "200"
+        // divTag.backgroundcolor = "red"
+        console.log(divTag);
+
+        let input = document.getElementById('inpttag')
+        input.type = "password"
+        input.Placeholder = "Enter Message"
+        console.log(input);
+
+    </script>
+</body>
+
+</html>

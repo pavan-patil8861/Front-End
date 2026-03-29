@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #fff;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        padding: 20px;      
+    }
+
+    .form-box {
+        width: 45%;
+        padding: 20px;
+    }
+
+ h2{
+color: red;
+
+ }
+   
+
+    .form-box input[type="text"],
+    .form-box input[type="email"],
+    .form-box input[type="password"] {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+     
+    }
+
+    .btn-group {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .btn-signup {
+        padding: 12px 30px;
+        background: #ff4d4d;
+        color: #fff;
+      border: none;
+    
+    }
+
+  
+    .btn-signin {
+        background: none;
+        border: none;
+        color: #444;
+    
+    }
+
+    .checkbox {
+        margin-top: 20px;
+
+        color: #555;
+    }
+
+    .checkbox a {
+      
+        text-decoration: none;
+    }
+
+    .image-box {
+        width: 45%;
+        text-align: center;
+    }
+
+    .image-box img {
+        width: 80%;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="form-box">
+        <h2>Get Started</h2>
+
+        <label>Name</label>
+        <input type="text" placeholder="Name">
+
+        <label>Email</label>
+        <input type="email" placeholder="Email">
+
+        <label>Password</label>
+        <input type="password" placeholder="Password">
+
+        <div class="btn-group">
+            <button class="btn-signup">Sign Up</button>
+            <button class="btn-signin">Sign In</button>
+        </div>
+
+        <div class="checkbox">
+            <input type="checkbox">
+            I agree to the <a href="#">Terms of service</a> and <a href="#">Privacy Policy</a>.
+        </div>
+    </div>
+
+    <div class="image-box">
+        <img src="https://plus.unsplash.com/premium_photo-1694819488591-a43907d1c5cc?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y3V0ZSUyMGRvZ3xlbnwwfHwwfHx8MA%3D%3D" alt="Illustration">
+    </div>
+
+</body>
+</html>

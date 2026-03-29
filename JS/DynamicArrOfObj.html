@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: math;
+        }
+
+
+        section {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            padding: 0px 30px;
+        }
+
+
+        .mainBox {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input,
+        button {
+            padding: 5px;
+            border-radius: 7px;
+            border: 1px solid gray;
+            font-size: 1.5rem;
+        }
+
+
+        .inputBox {
+            width: 100%;
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid gray;
+        }
+
+
+        input {
+            width: 70%;
+        }
+
+
+        button {
+            cursor: pointer;
+        }
+
+
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 7px;
+        }
+
+
+        .resultBox {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+
+    </section>
+
+    <script>
+        let imageList = []
+
+        function createImage() {
+            let url = document.getElementById('url').value
+            let result = document.getElementById('result')
+
+            imageList.push({
+                image: url
+            })
+
+            result.innerHTML = ''
+            console.log(result)
+            for (let i = 0; i < imageList.length; i++) {
+                result.innerHTML += '<img src="">' + imageList[i].image + '">'
+            }
+        }
+    </script>
+</body>
+
+</html>
